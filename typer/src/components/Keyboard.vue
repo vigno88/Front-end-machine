@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="container upper">
-            <img src="../../../../images/Liscence quebec.png" class="preview">
+            <!-- <img src="../../../../images/Liscence quebec.png" class="preview"> -->
             <input type="text" class="string" id="string" maxlength="8">
         </div>
         <div class="lower">
