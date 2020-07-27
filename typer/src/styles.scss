@@ -1,0 +1,51 @@
+// This file is for global styles
+
+$color: rgb(50,144,196);
+$gradient: linear-gradient(125deg, #3290c4 33%, #61d9f2 66%);
+
+.bg-gradient {
+  background: $color;
+  background: $gradient;
+}
+
+.bg-gradient-animated {
+  background: $color;
+  background: $gradient;
+  background-size: 400% 400%;
+
+  -webkit-animation: bg-animated 30s ease infinite;
+  -moz-animation: bg-animated 30s ease infinite;
+  animation: bg-animated 30s ease infinite;
+}
+
+@-webkit-keyframes bg-animated {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes bg-animated {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes bg-animated {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.btn-outline-gradient {
+  color: #fff;
+  border-color: $color;
+
+  &:hover {
+    @extend .bg-gradient;
+    color: #000;
+    border-color: $color;
+  }
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
